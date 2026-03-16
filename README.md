@@ -85,8 +85,7 @@ Quedan fuera del flujo automático:
 │   ├── worker_llm.py
 │   ├── feature_utils.py
 │   ├── build_dataset.py
-│   ├── train.py
-│   └── malicious_phish.csv
+│   └── train.py
 ├── docs/
 │   ├── memoria.md
 │   └── diagrama_flujo.png
@@ -331,7 +330,7 @@ python src/build_dataset.py
 
 El pipeline parte de un dataset base procedente de **Malicious URLs Dataset (**`malicious_phish.csv`**)**, publicado por **sid321axn** en Kaggle y compilado a partir de fuentes como **ISCX-URL-2016** y **PhishTank**. Sobre esta base, `build_dataset.py` incorpora además campañas recientes obtenidas desde **URLhaus** para construir `dataset_enriquecido.csv`, que es el conjunto finalmente utilizado en el entrenamiento del modelo L1.
 
-> La licencia y condiciones de uso del dataset original deben revisarse en su fuente de publicación correspondiente.
+> El repositorio no incluye el fichero bruto `malicious_phish.csv`; el pipeline de construcción del dataset parte de fuentes externas y/o locales que deben mantenerse fuera del control de versiones. La licencia y condiciones de uso del dataset original deben revisarse en su fuente de publicación correspondiente.
 
 ### 2\. Entrenamiento
 
