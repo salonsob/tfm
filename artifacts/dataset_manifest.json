@@ -1,0 +1,25 @@
+{
+  "timestamp_utc": "2026-03-08T21:55:01Z",
+  "keep_ip_literals": false,
+  "dedup_key": "url_canon",
+  "sources": {
+    "kaggle_path": "/home/casjd/tfm-miacs/src/malicious_phish.csv",
+    "urlhaus_url": "https://urlhaus.abuse.ch/downloads/csv_recent/",
+    "local_threats_path": "/home/casjd/tfm-miacs/src/local_threats.csv"
+  },
+  "counts": {
+    "kaggle_after_filter": 639048,
+    "urlhaus_after_filter": 4330,
+    "local_after_filter": 0,
+    "total_before_dedup": 643378,
+    "duplicates_removed": 11377,
+    "final_total": 632001
+  },
+  "final_type_distribution": {
+    "benign": 427617,
+    "defacement": 94956,
+    "phishing": 93316,
+    "malware": 16112
+  },
+  "output": "/home/casjd/tfm-miacs/src/dataset_enriquecido.csv"
+}

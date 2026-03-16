@@ -1,0 +1,56 @@
+{
+  "dataset_path": "/home/casjd/tfm-miacs/src/dataset_enriquecido.csv",
+  "model_path": "/home/casjd/tfm-miacs/src/ml_model.joblib",
+  "metrics_path": "/home/casjd/tfm-miacs/src/metrics.json",
+  "confusion_matrix_path": "/home/casjd/tfm-miacs/src/matriz_confusion_rf.png",
+  "pr_curve_path": "/home/casjd/tfm-miacs/src/pr_curve_rf.png",
+  "total_urls": 632001,
+  "benign": 427617,
+  "malicious": 204384,
+  "test_size": 0.2,
+  "random_state": 42,
+  "n_estimators": 200,
+  "auprc": 0.9633224354383831,
+  "oob_score": 0.9356071993670886,
+  "confusion_matrix_labels": [
+    0,
+    1
+  ],
+  "confusion_matrix": [
+    [
+      81894,
+      3630
+    ],
+    [
+      4379,
+      36498
+    ]
+  ],
+  "classification_report": {
+    "Benign": {
+      "precision": 0.9492425208350237,
+      "recall": 0.9575557738178757,
+      "f1-score": 0.953381025279836,
+      "support": 85524.0
+    },
+    "Malicious": {
+      "precision": 0.9095394736842105,
+      "recall": 0.8928737431807618,
+      "f1-score": 0.9011295599037097,
+      "support": 40877.0
+    },
+    "accuracy": 0.9366381595082317,
+    "macro avg": {
+      "precision": 0.929390997259617,
+      "recall": 0.9252147584993188,
+      "f1-score": 0.9272552925917729,
+      "support": 126401.0
+    },
+    "weighted avg": {
+      "precision": 0.9364028956866168,
+      "recall": 0.9366381595082317,
+      "f1-score": 0.9364833492315459,
+      "support": 126401.0
+    }
+  }
+}
